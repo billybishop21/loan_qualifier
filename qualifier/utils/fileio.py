@@ -29,17 +29,17 @@ def load_csv(csvpath):
     return data
 
 def save_csv(csvpath, data, header=None):
-    """Saves the CSV file to path provided
-    
-    Args:
-        csvpath: the csv file path
-        data: list of rows
-        header: optional header for csv file
+    """Saves CSV file from path provided.
 
+    Args:
+        csvpath is CSV file path
+        data is data provided
+        header=None means there is no header for CSV file
+        
     """
     with open(csvpath, "w", newline="") as csvfile:
        csvwriter = csv.writer(csvfile, delimiter=",")
-       if header:
-           csvwriter.writerow(header)
-    csvwriter.writerows(data)
+       header = ["Lender", "Max_Loan_Amount", "Max_LTV", "Max_DTI"," Min_Credit_Score", "Interest_Rate"]
+       csvwriter.writerow(header)
+       csvwriter.writerows(data)
 

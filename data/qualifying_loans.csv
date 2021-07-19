@@ -1,0 +1,3 @@
+Lender,Max_Loan_Amount,Max_LTV,Max_DTI, Min_Credit_Score,Interest_Rate
+FHA Fredie Mac - Starter Plus,300000,0.85,0.45,550,4.35
+Goldman MBS - Starter Plus,100000,0.8,0.43,600,4.35
